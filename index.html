@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous"
+    />
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <title>Instatest</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row bg-light p-2">
+                <!-- Logo -->
+                <div class="col-7">
+                    <nav class="navbar navbar-light bg-light">
+                        <div class="container-fluid">
+                          <a class="navbar-brand" href="#">
+                            <i class="fa-brands fa-instagram"></i> Instatest
+                          </a>
+                        </div>
+                      </nav>
+                </div>
+                <!-- start Modal create a new post -->
+                <div class="col-5 d-flex justify-content-end align-items-center">
+                        <div class="newPost pe-3">
+                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Create a new post
+                            </button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h4 class="modal-title" id="exampleModalLabel">Create a new post</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                    <h5>Caption</h5>
+                                    <div class="mb-3">
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Add the caption of your post here"></textarea>
+                                    </div>
+                                    <div class="d-grid gap-2 d-md-block">
+                                        <button class="btn border-secondary" type="button"><i class="fa-solid fa-camera text-dark"></i></button>
+                                        <button class="btn border-secondary" type="button"><i class="fa-solid fa-location-dot text-dark"></i></button>
+                                    </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-success">Publish</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                <!-- End Modal create a new post -->
+                <!-- Start dropdown btn -->
+                        <div class="dropdown">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-gear"></i>
+                            </a>
+                        
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                            <li><a class="dropdown-item text-danger border-secondary border-top pt-3" href="#">Logout</a></li>
+                            </ul>
+                        </div>
+                <!-- Start dropdown btn -->     
+                </div>
+        </div>
+        <!-- Start tabs -->
+        <div class="row pt-5">
+            <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><i class="fa-solid fa-square-full"></i></button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <!-- Start gallery layout -->
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="container-fluid px-0">
+                        <div class="row g-2">
+                            <div class="col-lg-4 col-sm-6">
+                                <a href="#" class="d-block">
+                                    <img class="img-fluid" src="https://source.unsplash.com/pWkk7iiCoDM/800x600" alt="gallery image">
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                            <a href="#" class="d-block">
+                                <img class="img-fluid" src="https://source.unsplash.com/aob0ukAYfuI/800x600" alt="gallery image">
+                            </a>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                            <a href="#" class="d-block">
+                                <img class="img-fluid" src="https://source.unsplash.com/EUfxH-pze7s/800x600" alt="gallery image">
+                            </a>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                            <a href="#" class="d-block">
+                                <img class="img-fluid" src="https://source.unsplash.com/M185_qYH8vg/800x600" alt="gallery image">
+                            </a>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                            <a href="#" class="d-block">
+                                <img class="img-fluid" src="https://source.unsplash.com/sesveuG_rNo/800x600" alt="gallery image">
+                            </a>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                            <a href="#" class="d-block">
+                                <img class="img-fluid" src="https://source.unsplash.com/AvhMzHwiE_0/800x600" alt="gallery image">
+                            </a>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                            <a href="#" class="d-block">
+                                <img class="img-fluid" src="https://source.unsplash.com/2gYsZUmockw/800x600" alt="gallery image">
+                            </a>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                            <a href="#" class="d-block">
+                                <img class="img-fluid" src="https://source.unsplash.com/EMSDtjVHdQ8/800x600" alt="gallery image">
+                            </a>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                            <a href="#" class="d-block">
+                                <img class="img-fluid" src="https://source.unsplash.com/8mUEy0ABdNE/800x600" alt="gallery image">
+                            </a>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                            <a href="#" class="d-block">
+                                <img class="img-fluid" src="https://source.unsplash.com/G9Rfc1qccH4/800x600" alt="gallery image">
+                            </a>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                            <a href="#" class="d-block">
+                                <img class="img-fluid" src="https://source.unsplash.com/aJeH0KcFkuc/800x600" alt="gallery image">
+                            </a>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                            <a href="#" class="d-block">
+                                <img class="img-fluid" src="https://source.unsplash.com/p2TQ-3Bh3Oo/800x600" alt="gallery image">
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end gallery layout -->
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <!-- Start Cards -->
+                    <div class="container-fluid">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-md-8 col-xl-5">              
+                                <div class="card mt-5">
+                                    <div class="row p-2">
+                                        <div class="col-md-9 d-flex justify-content-start"><h5>My Crazy dog Spark!</h5></div>
+                                        <div class="col-md-3 d-flex justify-content-end align-items-center pe-4"><span>08/26</span></div>
+                                      </div>
+                                    <img src="https://source.unsplash.com/8mUEy0ABdNE/400x300" class="card-img-top" alt="image">
+                                    <div class="card-body">
+                                    <p><strong>204 Likes</strong></p>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                                <div class="card w-100 mt-5">
+                                    <div class="row p-2">
+                                        <div class="col-md-9 d-flex justify-content-start"><h5>The greatness of Croatia</h5></div>
+                                        <div class="col-md-3 d-flex justify-content-end align-items-center pe-4"><span>04/29</span></div>
+                                      </div>
+                                    <img src="https://source.unsplash.com/aJeH0KcFkuc/400x300" class="card-img-top" alt="image">
+                                    <div class="card-body">
+                                    <p><strong>420 Likes</strong></p>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                                <div class="card w-100 mt-5">
+                                    <div class="row p-2">
+                                        <div class="col-md-9 d-flex justify-content-start"><h5>A great Look</h5></div>
+                                        <div class="col-md-3 d-flex justify-content-end align-items-center pe-4"><span>12/26</span></div>
+                                      </div>
+                                    <img src="https://source.unsplash.com/p2TQ-3Bh3Oo/400x300" class="card-img-top" alt="image">
+                                    <div class="card-body">
+                                    <p><strong>2345 Likes</strong></p>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Cards -->
+                </div>
+              </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>
